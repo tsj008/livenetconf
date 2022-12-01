@@ -1,0 +1,58 @@
+<?xml version='1.0' ?>
+<data xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <test_package_info xmlns="http://nokia.com/TAS-json">
+    <platform_name/>
+    <platform_ver/>
+    <product_name/>
+    <product_ver/>
+    <runTime_DockerImage_url/>
+    <runTime_OS_name/>
+    <runTime_OS_ver/>
+    <testPackage_name/>
+    <testPackage_ver/>
+    <test_tool_arg/>
+    <test_tool_name/>
+    <test_tool_ver/>
+  </test_package_info>
+  <tp_parameters xmlns="http://nokia.com/TAS-json">
+    <cctf>
+      <pre_execution_hook/>
+      <post_execution_hook/>
+      <slavePodTemplate>
+        <metadata>
+          <annotations>
+            <test/>
+          </annotations>
+        </metadata>
+        <spec>
+          <containers>
+            <name> container1 </name>
+            <resources>
+              <limits>
+                <cpu> 100m </cpu>
+                <memory> 200m </memory>
+              </limits>
+              <requests>
+                <cpu> 100m </cpu>
+                <memory> 200m </memory>
+              </requests>
+              <securityContext>
+                <privileged/>
+              </securityContext>
+            </resources>
+          </containers>
+          
+          <tolerations>
+            <key/>
+            <effect/>
+            <operator/>
+            <value/>
+          </tolerations>
+          <nodeSelector>
+            <is_edge/>
+          </nodeSelector>
+        </spec>
+      </slavePodTemplate>
+    </cctf>
+  </tp_parameters>
+</data>
